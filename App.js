@@ -6,7 +6,8 @@ import axios from "axios";
 
 export default class App extends React.Component {
   state = {
-    image: null
+    image: null,
+    loaded: 0
   };
   async componentDidMount() {
     const permission = await Permissions.getAsync(Permissions.CAMERA_ROLL);
@@ -31,6 +32,7 @@ export default class App extends React.Component {
             this.submitFile();
           }}
         />
+        <Text> {Math.round(this.state.loaded, 2)} %</Text>
       </View>
     );
   }
@@ -61,8 +63,10 @@ export default class App extends React.Component {
         "",
         body,
         {
-          headers: {
-            "Content-Type": "multipart/form-data"
+          onUploadProgress: ProgressEvent => {
+            this.setState({
+              loaded: (ProgressEvent.loaded / ProgressEvent.total) * 100
+            });
           }
         }
       )
