@@ -4308,9 +4308,37 @@ react-native-gesture-handler@1.0.9:
     invariant "^2.2.2"
     prop-types "^15.5.10"
 
-"react-native-maps@github:expo/react-native-maps#v0.22.1-exp.0":
+react-native-image-base64@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/react-native-image-base64/-/react-native-image-base64-0.1.3.tgz#bfc9eaf7cd3ec705aa25f00f6a11d0c379217fe8"
+  integrity sha512-0n1gLLvA9VJZ1w0zyaDYZQH/Re2VOQFW5kt0P/qYhqs4f1MvWsaTs+7CxXIQR3L2wgEsfDJ1sIKyrAZ0RoR2Hg==
+
+react-native-image-progress@^1.0.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-image-progress/-/react-native-image-progress-1.1.1.tgz#95bbe0875c7ebd54286df69cb37b598b94c54eb0"
+  integrity sha512-5rI2UjUo1bJoggU3lZAa+Wv29bm+N322XVR49mxfczfhaOyFdoXMIRgd5x2eXG+RQi9PcLleD6wxVDxGAPPO9Q==
+  dependencies:
+    prop-types "^15.5.10"
+
+react-native-maps@expo/react-native-maps#v0.22.1-exp.0:
   version "0.22.1"
   resolved "https://codeload.github.com/expo/react-native-maps/tar.gz/e6f98ff7272e5d0a7fe974a41f28593af2d77bb2"
+
+react-native-mediapicker@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-mediapicker/-/react-native-mediapicker-0.4.1.tgz#fa99daf889a3d36c9955d154b2c1753300d94db1"
+  integrity sha1-+pna+Imj02yZVdFUssF1MwDZTbE=
+  dependencies:
+    prop-types "^15.6.0"
+    react-native-image-progress "^1.0.1"
+    react-native-nativebutton "^0.1.5"
+
+react-native-nativebutton@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/react-native-nativebutton/-/react-native-nativebutton-0.1.5.tgz#991421b824526c8e6da0edbc550aedee506091c7"
+  integrity sha1-mRQhuCRSbI5toO28VQrt7lBgkcc=
+  dependencies:
+    prop-types "^15.6.0"
 
 react-native-reanimated@1.0.0-alpha.10:
   version "1.0.0-alpha.10"
