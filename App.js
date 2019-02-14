@@ -57,6 +57,8 @@ export default class App extends React.Component {
     var body = new FormData();
 
     body.append("uploadedfile", photo);
+    //add another param
+    body.append("text", "fsdjhjdkjs");
     axios
       .post(
         // add your url here
@@ -71,6 +73,7 @@ export default class App extends React.Component {
         }
       )
       .then(function() {
+        console.log(body);
         console.log("SUCCESS!!");
       })
       .catch(err => {
